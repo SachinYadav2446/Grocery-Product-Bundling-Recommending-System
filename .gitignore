@@ -7,10 +7,9 @@ __pycache__/
 env/
 venv/
 
-# Data (large files)
-data/raw/orders.csv
-data/raw/order_products__prior.csv
-data/raw/order_products__train.csv
+# Data
+data/raw/
+data/processed/
 
 # Saved model weights (large binaries)
 saved_models/item_embeddings.pt
