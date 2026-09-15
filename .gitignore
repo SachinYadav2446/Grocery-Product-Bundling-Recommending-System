@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv
+env/
+venv/
+
+# Data (large files)
+data/raw/orders.csv
+data/raw/order_products__prior.csv
+data/raw/order_products__train.csv
+
+# Saved model weights (large binaries)
+saved_models/item_embeddings.pt
+saved_models/two_tower_weights.pt
+
+# Keep the metrics JSON
+!saved_models/evaluation_metrics.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
