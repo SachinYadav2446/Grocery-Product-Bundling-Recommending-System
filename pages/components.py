@@ -16,16 +16,16 @@ GLOBAL_CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
 
 /* ── Reset & Base ─────────────────────────── */
-html, body, [class*="css"] {
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #F2F2F2;
-    color: #1F291E;
+html, body, [class*="css"], .stApp, [data-testid="stAppViewContainer"], [data-testid="stHeader"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    background-color: #F2F2F2 !important;
+    color: #1F291E !important;
 }
 
 /* Hide Streamlit chrome */
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer, header { visibility: hidden !important; display: none !important; }
 .block-container { padding: 0 !important; max-width: 100% !important; }
-section[data-testid="stSidebar"] { display: none; }
+section[data-testid="stSidebar"] { display: none !important; }
 
 /* ── Design Tokens ────────────────────────── */
 :root {
